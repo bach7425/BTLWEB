@@ -1,6 +1,3 @@
-:root{
-    --x:10px;
-}
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +6,6 @@
 }
 .flex{
     display: flex;
-    justify-content: space-around;
 }
 body{
     position: relative;
@@ -29,7 +25,7 @@ nav{
 
 nav ul{
     width: 100%;
-    list-style: none;
+    list-style-type: none;
     overflow: hidden;
 }
 nav ul li a{
@@ -59,7 +55,7 @@ nav .hiden_menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5f76e8;
+    background-color: lightblue;
     border-radius: 0 10% 10% 0;
     cursor: pointer;
 }
@@ -84,7 +80,6 @@ nav .users ul{
 }
 
 /* SECTION */
-
 /* HEADER */
 header{
     background-color: #5f76e8;
@@ -107,35 +102,33 @@ header .user p{
     color: white;
     padding-left: 10px;
 }
-.major{
-    width: 30%;
-    margin: 0 4%;
-    background-color: #d0e1f9;
-    border-radius: var(--x);
-    padding: var(--x);
-    text-align: center;
+/*CONTENT*/
+.content{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    min-height: 100vh;
+    padding: 20px;
+    transition: ease-in-out .5s;
 }
-.major > h3{
-    border-bottom: white solid 1px;
+.content.expand{
+    width: 100%;
+    left:0;
+    padding: 0;
 }
-.major > ul >li > a{
-    text-decoration: none;
+/* FOOTER */
+footer, .contact{
+    justify-content: space-between;
 }
-.major > ul{
+footer .school-info, .contact, h3{
     list-style-type: none;
-
+    padding: 20px;
 }
-.major > ul > li{
-    margin: var(--x);
+footer{
+    margin-top: 1%;
+    background-color: #5f76e8;
 }
-h2{
-    text-align: center;
-    padding: var(--x);
-    color: white;
-}
-section{
-    background-color: #4d648e;
-    padding-bottom: 2%;
-    margin: var(--x);
-    border-radius: var(--x);
-}
+/* footer div .contact li i{
+    width: 90px;
+} */

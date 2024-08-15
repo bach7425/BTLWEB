@@ -1,0 +1,35 @@
+:root{
+    --x:10px;
+}
+.major{
+    width: 30%;
+    margin: 0 4%;
+    background-color: #d0e1f9;
+    border-radius: var(--x);
+    padding: var(--x);
+    text-align: center;
+}
+.major > h3{
+    border-bottom: white solid 1px;
+}
+.major > ul >li > a{
+    text-decoration: none;
+}
+.major > ul{
+    list-style-type: none;
+
+}
+.major > ul > li{
+    margin: var(--x);
+}
+h2{
+    text-align: center;
+    padding: var(--x);
+    color: white;
+}
+section{
+    background-color: #4d648e;
+    padding-bottom: 2%;
+    margin: var(--x);
+    border-radius: var(--x);
+}
