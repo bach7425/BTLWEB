@@ -25,10 +25,10 @@
 h2{
     text-align: center;
     padding: var(--x);
-    color: white;
+    color: black;
 }
 section{
-    background-color: #4d648e;
+    background-color: white;
     padding-bottom: 2%;
     margin: var(--x);
     border-radius: var(--x);

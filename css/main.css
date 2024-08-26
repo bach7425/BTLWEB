@@ -17,7 +17,7 @@ nav{
     position: fixed;
     width: 15%;
     height: 100%;
-    background-color: #5f76e8;
+    background-color: #1d559f;
     align-items: center;
     z-index: 200;
     transition: ease-in-out .5s;
@@ -27,6 +27,9 @@ nav ul{
     width: 100%;
     list-style-type: none;
     overflow: hidden;
+}
+fa-solid{
+    color: white;
 }
 nav ul li a{
     width: 100%;
@@ -39,12 +42,11 @@ nav ul li a{
 }
 nav ul li a fa-solid{
     margin: 0 20px;
-    color: black;
     font-size: 1em;
 }
 nav ul li a:hover{
-    color: whitesmoke;
-    background-color: cyan  ;
+    color: #1d559f;
+    background-color: white   ;
 }
 nav .hiden_menu{
     position: absolute;
@@ -82,7 +84,7 @@ nav .users ul{
 /* SECTION */
 /* HEADER */
 header{
-    background-color: #5f76e8;
+    background-color: #1d559f;
     width: 100%;
 }
 header{
@@ -122,13 +124,36 @@ footer, .contact{
     justify-content: space-between;
 }
 footer .school-info, .contact, h3{
+    
     list-style-type: none;
     padding: 20px;
 }
 footer{
+    color: white;
     margin-top: 1%;
-    background-color: #5f76e8;
+    background-color: #1d559f;
 }
-/* footer div .contact li i{
-    width: 90px;
-} */
+.yellow{
+    color: yellow;
+}
+.footer_light{
+    background-color: white;
+}
+.footer_light h4{
+    width: 80%;
+    text-align: center;
+    color:blue;
+    text-align: left;
+    font-weight: normal;
+    padding: 10px;
+}
+footer div li a{
+    color: white;
+    text-decoration: none;
+}
+footer div li a:hover{
+    color: lightgray;
+}
+footer div li a:active{
+    color: darkgray;
+}

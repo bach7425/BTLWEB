@@ -1,0 +1,69 @@
+.left{
+    flex:1;
+}
+.Lg{
+    position: relative;
+    margin: 35% 10%;
+}
+h1{
+    padding: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+.form-group input {
+    padding: 8px;
+    width: 80%;
+    background-color: ghostwhite;
+    border-radius: 10px ;
+}
+.login{
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    margin: 20px auto;
+    width: 50%;
+    padding: 10px 0px;
+    color: white;
+    background-color: #3251d9;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.check {
+    justify-content: space-around;
+}
+.check a{
+    color: grey;
+    text-decoration: none ;
+}
+.right{
+    flex:1;
+    width: 100%;
+    background-image: url('/img/login_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+.right img{
+    display: block;
+    margin: 0px auto;
+}
+.contact{
+    justify-content: space-between;
+}
+.contact li a{
+    display: block;
+    color: #3251d9;
+    width: 100px;
+    height: 100px;
+    border: 5px solid blue;
+    border-radius: 50%;
+}
