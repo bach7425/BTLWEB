@@ -35,7 +35,7 @@ section{
 }
 .search{
     position: absolute;
-    font-size: 1rem;
+    font-size: 1.2rem;
     right:10px;
     width: 30%;
 }
@@ -47,7 +47,7 @@ section{
     margin-top: 5px;
 }
 .insert-bonus{
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 30%;
 }
 
@@ -94,6 +94,13 @@ section{
     color: white;
     border: 0;
 }
+.creat-bonus {
+    display: none;
+}
 .show{
     display: inline-block;
 }
+.show-creat{
+    display: block;
+}
+

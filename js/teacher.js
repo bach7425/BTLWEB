@@ -1,11 +1,20 @@
 window.addEventListener("load",function(){
+    // Bật chế độ tạo thì  show ra
+    let creat = document.querySelector('.creat');
+    let c = document.querySelector('.creat-bonus');
+    creat.addEventListener('click', function() {
+            c.classList.toggle('show-creat');
+    })
+    // Bật chế độ sửa thì các edsc show ra
     let fix=this.document.querySelector(".fix")
-    let hide =this.document.querySelectorAll(".hide")
+    let edsc =this.document.querySelectorAll(".edsc")
     fix.addEventListener("click",function(){
         for( let e of edsc){
         e.classList.toggle("show");
         }
     })
+    
+    //Tìm
     let search=document.querySelector("input[type=search]")
     search.onchange=function(){
         if(search.value !== ''){
@@ -98,4 +107,6 @@ window.addEventListener("load",function(){
             cancelEdit(pr);
         })
     })
+    //Tạo ra Khối 
+    
 })

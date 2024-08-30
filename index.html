@@ -50,16 +50,23 @@
         <input class="creat" type="button" value="Tạo">
         <input class="fix" type="button" value="Sửa">
         <br>
-        <div >
-            <input class="insert-bonus"type="text" placeholder="Tên Khoa cần thêm... ">
+        <div class="creat-bonus">
+            <input id="NameGroup" class="insert-bonus"type="text" placeholder="Tên Khoa cần thêm... ">
             <br>
-            <input type="button" value="Thêm">
+            <input type="button" value="Thêm" class="btn">
         </div>
         <section>
             <h2>Khoa Công nghệ thông tin</h2>
             <div class="flex">
                 <div class="major">
-                            <h3 class="name">Công nghệ thông tin </h3>
+                            <h3 class="name">Công nghệ thông tin 
+                                <div class="edsc">
+                                    <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                                    <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                                    <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                                </div>
+                            </h3>
                     <ul>
                         <li class="user">
                             <a href="#" class="name">Nguyễn Văn A</a>
