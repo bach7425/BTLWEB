@@ -6,11 +6,12 @@
 }
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 body{
     position: relative;
     width: 100%;
-    min-height: 150vh;
+    height: 100vh;
 }
 /* NAV */
 nav{

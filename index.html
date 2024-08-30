@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/giuld.css">
     <link rel="stylesheet" href="css/reponsive.css">
     <script src="js/scripts.js"></script>
+    <script src="js/teacher.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
@@ -44,148 +45,166 @@
         </header>
         <!--  -->
         <h1>>>DANH SÁCH GIÁO VIÊN </h1>
+        <input class="search"type="search" placeholder="Tên Ngành/Giáo Viên cần tìm">
+        <br>
+        <input class="creat" type="button" value="Tạo">
+        <input class="fix" type="button" value="Sửa">
+        <br>
+        <div >
+            <input class="insert-bonus"type="text" placeholder="Tên Khoa cần thêm... ">
+            <br>
+            <input type="button" value="Thêm">
+        </div>
         <section>
             <h2>Khoa Công nghệ thông tin</h2>
             <div class="flex">
                 <div class="major">
-                    <h3>Công nghệ thông tin</h3>
+                            <h3 class="name">Công nghệ thông tin </h3>
                     <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
+                        <li class="user">
+                            <a href="#" class="name">Nguyễn Văn A</a>
+                            <div class="edsc">
+                                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                            </div>
+                        </li>
+                        <li class="user" ><a href="#"class="name">Nguyễn Văn B</a>
+                            <div class="edsc">
+                                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                            </div>
+                        </li>
+                        <li class="user"><a href="#" class="name">Nguyễn Văn C</a>
+                            <div class="edsc">
+                                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                            </div>
+                        </li>
+                        <li class="user"><a href="#" class="name">Nguyễn Văn D</a>
+                            <div class="edsc">
+                                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="major">
-                    <h3>Khoa học máy tính</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
-                    </ul>
-                </div>
-                <div class="major">
-                    <h3>Hệ thống thông tin quản lý</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
-                    </ul>
-                </div>
+                    <h3 class="name">Công nghệ thông tin </h3>
+            <ul>
+                <li class="user">
+                    <a href="#" class="name">Nguyễn Văn A</a>
+                    <div class="edsc">
+                        <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                    </div>
+                </li>
+                <li class="user" ><a href="#"class="name">Nguyễn Văn B</a>
+                    <div class="edsc">
+                        <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                    </div>
+                </li>
+                <li class="user"><a href="#" class="name">Nguyễn Văn C</a>
+                    <div class="edsc">
+                        <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                    </div>
+                </li>
+                <li class="user"><a href="#" class="name">Nguyễn Văn D</a>
+                    <div class="edsc">
+                        <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="major">
+            <h3 class="name">Công nghệ thông tin </h3>
+    <ul>
+        <li class="user">
+            <a href="#" class="name">Nguyễn Văn A</a>
+            <div class="edsc">
+                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+            </div>
+        </li>
+        <li class="user" ><a href="#"class="name">Nguyễn Văn B</a>
+            <div class="edsc">
+                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+            </div>
+        </li>
+        <li class="user"><a href="#" class="name">Nguyễn Văn C</a>
+            <div class="edsc">
+                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+            </div>
+        </li>
+        <li class="user"><a href="#" class="name">Nguyễn Văn D</a>
+            <div class="edsc">
+                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+            </div>
+        </li>
+    </ul>
+</div>
 
             </div>
         </section>
-        <section>
-            <h2>Khoa Ngoại Ngữ</h2>
-            <div class="flex">
-                <div class="major">
-                    <h3>Ngôn ngữ Anh</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
+        
+        <section class="footers">
+            <footer class="flex">
+                <div>
+                    <h3>Thông tin chung</h3>
+                    <hr>
+                    <ul class="school-info">
+                        <li><i class="fa-solid fa-location-dot"> </i> Địa chỉ: 35 – 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1,
+                            TP. HCM.</li>
+                        <li><i class="fa-solid fa-phone"> </i> Điện thoại: <span class="yellow">028-38364748</span>.</li>
+                        <li><i class="fa-solid fa-fax"> </i> Fax: <span class="yellow">028-39207639 hoặc
+                                028-39207640</span>.</li>
+                        <li><i class="fa-solid fa-envelope"> </i> E-mail: <span class="yellow">ou@ou.edu.vn</span>.</li>
                     </ul>
                 </div>
-                <div class="major">
-                    <h3>Ngôn ngữ Nhật</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
+                <div>
+                    <h3>Liên hệ với chúng tôi</h3>
+                    <hr>
+                    <ul class="flex contact">
+                        <li><a href="https://www.facebook.com/TruongDaiHocMo"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/@HoChiMinhCityOpenUniversity/featured"><i class="fa-brands fa-google"></i></a></li>
+                        <li><a href="https://ou.edu.vn/"><i class="fa-brands fa-youtube"></i></a></li>
                     </ul>
                 </div>
-                <div class="major">
-                    <h3>Ngôn ngữ Trung</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
-                    </ul>
-                </div>
-                <div class="major">
-                    <h3>Ngôn ngữ Hàn</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
-                    </ul>
-                </div>
+            </footer>
+            <div class="footer_light">
+                <h4>&copy; 2024 TRƯỜNG ĐẠI HỌC MỞ TP HCM </h4>
             </div>
         </section>
-        <section>
-            <h2>Khoa Công nghệ thông tin</h2>
-            <div class="flex">
-                <div class="major">
-                    <h3>Khoa Công nghệ thông tin</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
-                    </ul>
-                </div>
-                <div class="major">
-                    <h3>Khoa Công nghệ thông tin</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
-                    </ul>
-                </div>
-                <div class="major">
-                    <h3>Khoa Công nghệ thông tin</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
-                    </ul>
-                </div>
-                <div class="major">
-                    <h3>Khoa Công nghệ thông tin</h3>
-                    <ul>
-                        <li><a href="#">Nguyễn Văn A</a></li>
-                        <li><a href="#">Nguyễn Văn B</a></li>
-                        <li><a href="#">Nguyễn Văn C</a></li>
-                        <li><a href="#">Nguyễn Văn D</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <footer class="flex">
-            <div>
-                <h3>Thông tin chung</h3>
-                <hr>
-                <ul class="school-info">
-                    <li><i class="fa-solid fa-location-dot"> </i> Địa chỉ: 35 – 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1,
-                        TP. HCM.</li>
-                    <li><i class="fa-solid fa-phone"> </i> Điện thoại: <span class="yellow">028-38364748</span>.</li>
-                    <li><i class="fa-solid fa-fax"> </i> Fax: <span class="yellow">028-39207639 hoặc
-                            028-39207640</span>.</li>
-                    <li><i class="fa-solid fa-envelope"> </i> E-mail: <span class="yellow">ou@ou.edu.vn</span>.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Liên hệ với chúng tôi</h3>
-                <hr>
-                <ul class="flex contact">
-                    <li><a href="https://www.facebook.com/TruongDaiHocMo"><i class="fa-brands fa-facebook"></i></a>
-                    </li>
-                    <li><a href="https://www.youtube.com/@HoChiMinhCityOpenUniversity/featured"><i class="fa-brands fa-google"></i></a></li>
-                    <li><a href="https://ou.edu.vn/"><i class="fa-brands fa-youtube"></i></a></li>
-                </ul>
-            </div>
-        </footer>
-        <div class="footer_light">
-            <h4>© 2024 TRƯỜNG ĐẠI HỌC MỞ TP HCM </h4>
-        </div>
     </section>
 </body>
 
