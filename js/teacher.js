@@ -29,7 +29,7 @@ window.addEventListener("load",function(){
                 if(t.innerText.toUpperCase().includes(this.value.toUpperCase()) === true)
                     t.style.color="red"
             // tìm giảng viên
-
+            // tắt hết hiệu ứng
             let teacher =document.querySelectorAll(".major a")
             for(let t of teacher )
                 t.style="initial"
@@ -39,7 +39,18 @@ window.addEventListener("load",function(){
                 if(t.innerText.toUpperCase().includes(this.value.toUpperCase()) === true)
                     t.style.color="red"
         }
+        else{
+            // tắt hết hiệu ứng
+            let major =document.querySelectorAll(".major h3")
+            for(let m of major )
+                m.style="initial"
+            let teacher =document.querySelectorAll(".major a")
+            for(let t of teacher )
+                t.style="initial"
+        }
+        
     }
+    //Sử dụng cho li
     // Hàm này sẽ được gọi khi người dùng nhấn nút "Sửa"
     function enableEdit(pr){
         let name=pr.querySelector('.name');
@@ -68,10 +79,10 @@ window.addEventListener("load",function(){
 
     // Hàm này sẽ được gọi khi người dùng nhấn nút "Hủy"
     function cancelEdit(pr) {
-        let input = pr.querySelector('.edit-name');
+        let cancel = pr.querySelector('.edit-name');
 
         // Khôi phục tên ban đầu và chuyển đổi input field trở lại thành một thẻ <a>
-        input.outerHTML = `<a href="#" class="name">${input.defaultValue}</a>`;
+        cancel.outerHTML = `<a href="#" class="name">${cancel.defaultValue}</a>`;
 
         // Hiện lại nút "Sửa" và "Xóa", ẩn nút "Lưu" và "Hủy"
         pr.querySelector('.edit').style.display = 'inline-block';
@@ -80,33 +91,143 @@ window.addEventListener("load",function(){
         pr.querySelector('.cancel').style.display = 'none';
     }
 
-    // Thêm sự kiện cho các nút "Sửa","Xóa","Lưu", "Hủy"
-    this.document.querySelectorAll('.edit').forEach(button =>{
-        button.addEventListener('click',function(){
-            const pr=this.parentElement.parentElement;
+    // Thêm sự kiện li cho các nút "Sửa","Xóa","Lưu", "Hủy"
+    let el = document.querySelectorAll('.edit')
+    for(let e of el){
+        e.addEventListener('click',function(){
+            let pr=this.parentElement.parentElement;
             enableEdit(pr);
         })
-    })
-    document.querySelectorAll('.delete').forEach(button => {
-        button.addEventListener('click', function(){
+    }
+    let dl=document.querySelectorAll('.delete')
+    for(let d of dl) {
+        d.addEventListener('click', function(){
             if (confirm("Bạn có chắc chắn xóa không?") === true) {
                 const pr = this.closest('.user');
                 pr.remove();
             }
         });
-    });
-    this.document.querySelectorAll('.save').forEach(button =>{
-        button.addEventListener('click',function(){
-            const pr=this.parentElement.parentElement;
+    }
+    let sl= this.document.querySelectorAll('.save')
+    for(let s of sl){
+        sl= this.document.querySelectorAll('.save')
+        s.addEventListener('click',function(){
+            alert('Lưu thành công!');
+            let pr=this.parentElement.parentElement;
             saveEdit(pr);
+
         })
-    })
-    this.document.querySelectorAll('.cancel').forEach(button =>{
-        button.addEventListener('click',function(){
-            const pr=this.parentElement.parentElement;
+    }
+    let cl=this.document.querySelectorAll('.cancel')
+    for(let c of cl){
+        c.addEventListener('click',function(){
+            let pr=this.parentElement.parentElement;
             cancelEdit(pr);
         })
-    })
-    //Tạo ra Khối 
+    }
     
+    //Sử dụng cho h3
+    // Hàm này sẽ được gọi khi người dùng nhấn nút "Sửa
+    function enableEdith3(e){
+        let name =e.querySelector('.name')
+
+        // Ẩn và hiện các chức năng
+        e.querySelector('.edit_h3').style.display='none';
+        e.querySelector('.delete_h3').style.display='none';
+        e.querySelector('.save_h3').style.display='inline-block';
+        e.querySelector('.cancel_h3').style.display='inline-block';
+        e.querySelector('.add_h3').style.display='inline_block';
+        
+        name.outerHTML=`<input type="text" class="edit-nameh3" value="${name.innerText}">`;
+    }
+    // h3:Hàm này sẽ được gọi khi người dùng nhấn nút "Lưu"
+    function saveEdith3(e){
+        let save=e.querySelector('.edit-nameh3')
+
+        save.outerHTML = `<h3 class="name">${save.value}</h3>`;
+    // Ẩn và hiện các chức năng
+    e.querySelector('.edit_h3').style.display='inline-block';
+    e.querySelector('.delete_h3').style.display='inline-block';
+    e.querySelector('.save_h3').style.display='none';
+    e.querySelector('.cancel_h3').style.display='none';
+    e.querySelector('.add_h3').style.display='inline_block';
+
+    }
+    // h3:Hàm này sẽ được gọi khi người dùng nhấn nút "Hủy"
+    function cancelEdith3(e){
+        let cancel =e.querySelector('.edit-nameh3')
+
+        cancel.outerHTML=`<h3 class="name">${cancel.defaultValue}</h3>`
+        // Ẩn và hiện các chức năng
+        e.querySelector('.edit_h3').style.display='inline-block';
+        e.querySelector('.delete_h3').style.display='inline-block';
+        e.querySelector('.save_h3').style.display='none';
+        e.querySelector('.cancel_h3').style.display='none';
+        e.querySelector('.add_h3').style.display='inline_block';
+        
+        
+    }
+    // h3:Hàm này sẽ được gọi khi người dùng nhấn nút "Thêm"
+    function addUser(e){
+        let h=`<li class="user">
+                    <input type="text" class="edit-name" value=" ABC" placeholder="Họ và tên">
+                    <div class="edsc show">
+                        <button class="edit" style="display: none;" ><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete" style="display: none;"><i class="fa-solid fa-trash"></i></button>
+                        <button class="save" style="display: inline-block;"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button class="cancel" style="display: inline-block;"><i class="fa-solid fa-ban"></i></button>
+                    </div>
+                </li>`
+            let last =e.querySelector(".user:last-child")
+            last.insertAdjacentHTML("afterend",h)
+    }
+    // h3:Thêm sự kiện h2 cho các nút "Sửa","Xóa","Lưu", "Hủy", "Thêm"
+
+    let e3= this.document.querySelectorAll('.edit_h3')
+    for(let e of e3){
+        e.addEventListener('click',function(){
+            let pr=this.parentElement.parentElement;
+            enableEdith3(pr);
+        })
+    }
+
+    let d3=this.document.querySelectorAll('.delete_h3')
+    for(let d of d3){
+        d.addEventListener('click',function(){
+            let pr=this.closest('.major');
+            pr.remove();
+        })
+    }
+    let s3=this.document.querySelectorAll('.save_h3')
+    for(let s of s3){
+        s.addEventListener('click',function(){
+            let pr=this.parentElement.parentElement;
+            saveEdith3(pr);
+        }
+    )
+    }
+    let c3 =this.document.querySelectorAll('.cancel_h3')
+    for(let c of c3){
+        c.addEventListener('click',function(){
+            let pr=this.parentElement.parentElement;
+            cancelEdith3(pr);
+        })
+    }
+    let add3= this.document.querySelectorAll('.add_h3')
+    for(let a of add3){
+        a.addEventListener('click',function(){
+            let p=this.closest('.major').querySelector('.users')
+            addUser(p);
+        })
+    }
+    // Sử dụng cho h2 
+    // Hàm này sẽ được gọi khi người dùng nhấn nút "Sửa
+
+    // Hàm này sẽ được gọi khi người dùng nhấn nút "Lưu"
+
+    // Hàm này sẽ được gọi khi người dùng nhấn nút "Hủy"
+    
+    // Hàm này sẽ được gọi khi người dùng nhấn nút "Thêm" h3
+
+
 })

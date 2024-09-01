@@ -1,6 +1,10 @@
 :root{
     --x:10px;
 }
+.flex-major{
+    display: flex;
+    flex-wrap: wrap;
+}
 .major{
     flex:1;
     margin: 2% 4%;
@@ -9,7 +13,7 @@
     padding: var(--x);
     text-align: center;
 }
-.major  h3{
+.major  .major_h3{
     border-bottom: white solid 1px;
 }
 .major > ul >li > a{
@@ -62,37 +66,24 @@ section{
     display: none;
 }
 
-.edit{
-    background-color: #64a2e4;
+.edit , .delete , .save ,.cancel, .add_h3 , .edit_h3 , .delete_h3 , .save_h3, .cancel_h3{
     width: 35px;
     height: 35px;
     margin: 3px 5px;
     color: white;
     border: 0;
 }
-.delete{
-    background-color: red;
-    width: 35px;
-    height: 35px;
-    margin: 3px 2px;
-    color: white;
-    border: 0;
+.edit , .edit_h3 {
+    background-color: #64a2e4;
 }
-.save{
+.delete, .delete_h3{
+    background-color: red;
+}
+.save, .save_h3, .add_h3{
     background-color: greenyellow;
-    width: 35px;
-    height: 35px;
-    margin: 3px 2px;
-    color: white;
-    border: 0;
 }
-.cancel{
+.cancel , .cancel_h3{
     background-color: red;
-    width: 35px;
-    height: 35px;
-    margin: 3px 2px;
-    color: white;
-    border: 0;
 }
 .creat-bonus {
     display: none;
