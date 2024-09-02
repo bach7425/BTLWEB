@@ -6,12 +6,13 @@
     flex-wrap: wrap;
 }
 .major{
-    flex:1;
+    width: 25%;
     margin: 2% 4%;
     background-color: #d0e1f9;
     border-radius: var(--x);
     padding: var(--x);
     text-align: center;
+    align-items: center;
 }
 .major  .major_h3{
     border-bottom: white solid 1px;
@@ -26,8 +27,11 @@
 .major > ul > li{
     margin: var(--x);
 }
-h2{
+.title-h2{
     text-align: center;
+}
+h2{
+
     padding: var(--x);
     color: black;
 }
@@ -37,6 +41,7 @@ section{
     margin: var(--x);
     border-radius: var(--x);
 }
+
 .search{
     position: absolute;
     font-size: 1.2rem;
@@ -66,23 +71,24 @@ section{
     display: none;
 }
 
-.edit , .delete , .save ,.cancel, .add_h3 , .edit_h3 , .delete_h3 , .save_h3, .cancel_h3{
+.edit , .delete , .save ,.cancel,
+ .add_h3 , .edit_h3 , .delete_h3 , .save_h3, .cancel_h3,
+ .add_h2, .edit_h2 , .delete_h2 , .save_h2, .cancel_h2{
     width: 35px;
     height: 35px;
     margin: 3px 5px;
     color: white;
     border: 0;
 }
-.edit , .edit_h3 {
+.edit , .edit_h3 , .edit_h2 {
     background-color: #64a2e4;
 }
-.delete, .delete_h3{
-    background-color: red;
+.delete, .delete_h3, .delete_h2{    background-color: red;
 }
-.save, .save_h3, .add_h3{
+.save, .save_h3, .save_h2, .add_h3, .add_h2{
     background-color: greenyellow;
 }
-.cancel , .cancel_h3{
+.cancel , .cancel_h3, .cancel_h2{
     background-color: red;
 }
 .creat-bonus {
@@ -93,5 +99,12 @@ section{
 }
 .show-creat{
     display: block;
+}
+.btn{
+    background-color: rgb(2, 78, 63);
+    padding: 5px 5px;
+    color: white;
+    border: 1px solid gray;
+    margin-top: 5px;
 }
 
