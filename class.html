@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/giuld.css">
     <link rel="stylesheet" href="css/reponsive.css">
     <script src="js/scripts.js"></script>
+    <script src="js/teacher.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
@@ -43,66 +44,103 @@
             </div>
         </header>
         <!--  -->
-        <h1>>>DANH SÁCH CÁC LỚP </h1>
-        <section>
-            <h2>Khoa Công nghệ thông tin</h2>
-            <div class="flex">
-                <div class="major">
-                    <h3>Công nghệ thông tin</h3>
-                    <ul>
-                        <li><a href="#">DH23IT01</a></li>
-                    </ul>
-                </div>
-                <div class="major">
-                    <h3>Khoa học máy tính</h3>
-                    <ul>
-                        <li><a href="#">DH23CS01</a></li>
-                        <li><a href="#">DH23CS02</a></li>
-                        <li><a href="#">DH23CS03</a></li>
-                        <li><a href="#">DH23CS04</a></li>
-                    </ul>
-                </div>
-                <div class="major">
-                    <h3>Hệ thống thông tin quản lý</h3>
-                    <ul>
-                        <li><a href="#">DH23IM01</a></li>
-                        <li><a href="#">DH23IM02</a></li>
-                        <li><a href="#">DH23IM03</a></li>
-                        <li><a href="#">DH23IM04</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-            
-            
-        </section>
-        <footer class="flex">
-            <div>
-                <h3>Thông tin chung</h3>
-                <hr>
-                <ul class="school-info">
-                    <li><i class="fa-solid fa-location-dot"> </i> Địa chỉ: 35 – 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1,
-                        TP. HCM.</li>
-                    <li><i class="fa-solid fa-phone"> </i> Điện thoại: <span class="yellow">028-38364748</span>.</li>
-                    <li><i class="fa-solid fa-fax"> </i> Fax: <span class="yellow">028-39207639 hoặc
-                            028-39207640</span>.</li>
-                    <li><i class="fa-solid fa-envelope"> </i> E-mail: <span class="yellow">ou@ou.edu.vn</span>.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Liên hệ với chúng tôi</h3>
-                <hr>
-                <ul class="flex contact">
-                    <li><a href="https://www.facebook.com/TruongDaiHocMo"><i class="fa-brands fa-facebook"></i></a>
-                    </li>
-                    <li><a href="https://www.youtube.com/@HoChiMinhCityOpenUniversity/featured"><i class="fa-brands fa-google"></i></a></li>
-                    <li><a href="https://ou.edu.vn/"><i class="fa-brands fa-youtube"></i></a></li>
-                </ul>
-            </div>
-        </footer>
-        <div class="footer_light">
-            <h4>&copy; 2024 TRƯỜNG ĐẠI HỌC MỞ TP HCM </h4>
+        <h1>>>DANH SÁCH CÁC LỚP  </h1>
+        <input class="search"type="search" placeholder="Tên Lớp cần tìm">
+        <br>
+        <input class="creat" type="button" value="Tạo">
+        <input class="fix" type="button" value="Sửa">
+        <br>
+        <div class="creat-bonus">
+            <input id="NameGroup" class="insert-bonus"type="text" placeholder="Tên Khoa cần thêm... ">
+            <br>
+            <input type="button" value="Thêm" class="btn">
         </div>
+        <section>
+            <div class="major-list">
+            <div class="title-h2">
+                <h2 class="name">Khoa Công nghệ thông tin</h2>
+                <div class="edsc show" >
+                    <button class="edit_h2"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete_h2"><i class="fa-solid fa-trash"></i></button>
+                    <button class="save_h2" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                    <button class="cancel_h2" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                    <button class="add_h2"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="flex-major">
+                <div class="major">
+                            <div class="major_h3">
+                                <h3 class="name">Công nghệ thông tin</h3> 
+                                <div class="edsc show">
+                                    <button class="edit_h3"><i class="fa-solid fa-pen"></i></button>
+                                    <button class="delete_h3"><i class="fa-solid fa-trash"></i></button>
+                                    <button class="save_h3" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                                    <button class="cancel_h3" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                                    <button class="add_h3"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                    <ul class="users">
+                        <li class="user ">
+                            <a href="#" class="name">DH23IT01</a>
+                            <div class="edsc show">
+                                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                            </div>
+                        </li>
+                        <li class="user" ><a href="#"class="name">DH23IT02</a>
+                            <div class="edsc show">
+                                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                            </div>
+                        </li>
+                        <li class="user"><a href="#" class="name">DH23IT03</a>
+                            <div class="edsc show">
+                                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                                <button class="save" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+                                <button class="cancel" style="display: none;"><i class="fa-solid fa-ban"></i></button>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <section class="footers">
+            <footer class="flex">
+                <div>
+                    <h3>Thông tin chung</h3>
+                    <hr>
+                    <ul class="school-info">
+                        <li><i class="fa-solid fa-location-dot"> </i> Địa chỉ: 35 – 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1,
+                            TP. HCM.</li>
+                        <li><i class="fa-solid fa-phone"> </i> Điện thoại: <span class="yellow">028-38364748</span>.</li>
+                        <li><i class="fa-solid fa-fax"> </i> Fax: <span class="yellow">028-39207639 hoặc
+                                028-39207640</span>.</li>
+                        <li><i class="fa-solid fa-envelope"> </i> E-mail: <span class="yellow">ou@ou.edu.vn</span>.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Liên hệ với chúng tôi</h3>
+                    <hr>
+                    <ul class="flex contact">
+                        <li><a href="https://www.facebook.com/TruongDaiHocMo"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/@HoChiMinhCityOpenUniversity/featured"><i class="fa-brands fa-google"></i></a></li>
+                        <li><a href="https://ou.edu.vn/"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+            <div class="footer_light">
+                <h4>&copy; 2024 TRƯỜNG ĐẠI HỌC MỞ TP HCM </h4>
+            </div>
+        </section>
     </section>
 </body>
 

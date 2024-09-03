@@ -195,7 +195,6 @@ window.addEventListener("load", function () {
       for (let s of sl) {
         sl = this.document.querySelectorAll(".save");
         s.addEventListener("click", function () {
-          alert("Lưu thành công!");
           let pr = this.parentElement.parentElement;
           saveEdit(pr);
         });
@@ -207,14 +206,7 @@ window.addEventListener("load", function () {
           cancelEdit(pr);
         });
       }
-      // Bật chế độ sửa thì các edsc show ra
-    let fix = this.document.querySelector(".fix");
-    let edsc = this.document.querySelectorAll(".edsc");
-    fix.addEventListener("click", function () {
-      for (let e of edsc) {
-        e.classList.toggle("show");
-      }
-    });
+      
     }
     // h3:Thêm sự kiện cho các nút "Sửa","Xóa","Lưu", "Hủy", "Thêm"
   
@@ -372,7 +364,6 @@ window.addEventListener("load", function () {
         for (let s of sl) {
           sl = this.document.querySelectorAll(".save");
           s.addEventListener("click", function () {
-            alert("Lưu thành công!");
             let pr = this.parentElement.parentElement;
             saveEdit(pr);
           });
@@ -450,7 +441,7 @@ window.addEventListener("load", function () {
                 <div class="major">
                             <div class="major_h3">
                                 <input type="text" class="edit-nameh3" value=" ABC" placeholder="Tên ngành">
-                                <div class="edsc show">
+                                <div class="edsc show ">
                                     <button class="edit_h3" style="display: none;"><i class="fa-solid fa-pen"  ></i></button>
                                     <button class="delete_h3" style="display: none;"><i class="fa-solid fa-trash"  ></i></button>
                                     <button class="save_h3" style="display: inline-block;"><i class="fa-solid fa-floppy-disk"></i></button>
@@ -568,7 +559,6 @@ window.addEventListener("load", function () {
       let sl = document.querySelectorAll(".save");
       for (let s of sl) {
         s.addEventListener("click", function () {
-          alert("Lưu thành công!");
           let pr = this.parentElement.parentElement;
           saveEdit(pr);
         });
@@ -580,14 +570,6 @@ window.addEventListener("load", function () {
           cancelEdit(pr);
         });
       }
-      // Bật chế độ sửa thì các edsc show ra
-      let fix = document.querySelector(".fix");
-      let edsc = document.querySelectorAll(".edsc");
-      fix.addEventListener("click", function () {
-        for (let e of edsc) {
-          e.classList.toggle("show");
-        }
-    });
     })
   });
   

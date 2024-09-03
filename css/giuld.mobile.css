@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .major {
+        flex: 0 0 100%;
+        width: 100%;
+        margin: 1% 2%;
+    }
+    .search, .insert-bonus {
+        width: 60%;
+        right: auto;
+        font-size: 1.2rem;
+    }
+
+    .creat, .btn {
+        width: 30%;
+        font-size: 1rem;
+        padding: 8px;
+        margin-top: 10px;
+    }
+
+    .flex-major {
+        justify-content: center;
+    }
+
+    .major > ul > li {
+        margin: var(--x);
+        padding: 0 1%;
+    }
+}
+
