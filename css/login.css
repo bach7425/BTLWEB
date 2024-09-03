@@ -1,7 +1,4 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
+
 body{
     position: relative;
     width: 100%;
@@ -16,9 +13,8 @@ body{
     height: 100vh;
 }
 .Lg{
-
     position: relative;
-    margin: 35% 10%;
+    margin: 45% 0 ;
 }
 .left > img{
     width: 80%;
@@ -85,7 +81,7 @@ h1{
     display: block;
 }
 
-@media (max-width:767px) {
+@media (max-width:690px) {
     .right{
         display: none;
     }
